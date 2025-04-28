@@ -18,7 +18,7 @@ site-keywords: Python, Data Analysis, Statistics, Network, Machinelearning, Deep
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+heroimage: https://raw.githubusercontent.com/PaperToCode/PaperToCode.github.io/refs/heads/main/assets/images/background_ai.avif
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -43,7 +43,7 @@ disqus-shortname:
 # Name of the Author
 author-name: PaperToCode
 # URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
+author-image: https://github.com/PaperToCode/PaperToCode.github.io/blob/main/assets/images/PAPERTOCODE_logo.png?raw=true
 # 60 Words About the Author
 author-about: I'm PaperToCode, and i live by pursuing work that makes my heart race. Regardless of my academic background, I believe that a strong desire to achieve something brings me closer to my goals. With consistent effort and perseverance, i actively shape myself into someone who ultimately accomplishes what I've set out to do. 
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
