@@ -1,0 +1,57 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include navbar.html %}
+
+    <!-- Main Section -->
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="section">
+            <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">
+              Practice Categories
+            </p>
+          </div>
+
+          <!-- Card List -->
+          <div class="container" style="max-width: 700px; margin: 0 auto;">
+            <a href="/practice/python">
+              <div class="box mb-5">
+                <h2 class="title is-size-4 has-text-left">Python</h2>
+                <p class="has-text-left has-text-grey">
+                  기초 문법과 데이터를 위한 파이썬 연습 모음
+                </p>
+              </div>
+            </a>
+
+            <a href="/practice/statistics">
+              <div class="box mb-5">
+                <h2 class="title is-size-4 has-text-left">Statistics</h2>
+                <p class="has-text-left has-text-grey">
+                  데이터 해석을 위한 통계 실습 정리
+                </p>
+              </div>
+            </a>
+
+            <a href="/practice/machinelearning">
+              <div class="box">
+                <h2 class="title is-size-4 has-text-left">Machine Learning</h2>
+                <p class="has-text-left has-text-grey">
+                  실전 프로젝트용 머신러닝 코드 모음
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+  </body>
+</html>

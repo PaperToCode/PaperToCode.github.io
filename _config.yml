@@ -4,10 +4,15 @@ markdown: kramdown
 # URL of the Site
 url: ''
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl: ""
 
 # Title of the Site
 title: Paper To Code
+# practice 컬렉션 새로 만들고, 이 컬렉션은 _practice/ 폴더를 자동으로 연결하여 하위 파일들 글로 인식
+collections:
+  practice:
+    output: true 
+    # 글들을 최종 웹사이트에 출력
 # Description of the Site
 description: AI에 대해 꾸준히 배우고 기록하는 공간
 # URL of Image of the Site
