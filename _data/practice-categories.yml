@@ -1,0 +1,14 @@
+- title: Python
+  slug: python
+  url: /practice/python/
+  description: 기초 문법과 데이터를 위한 파이썬 연습 모음
+
+- title: Statistics
+  slug: statistics
+  url: /practice/statistics/
+  description: 데이터 해석을 위한 통계 실습 정리
+
+- title: Machine Learning
+  slug: machinelearning
+  url: /practice/machinelearning/
+  description: 실전 프로젝트용 머신러닝 코드 모음

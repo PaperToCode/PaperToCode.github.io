@@ -4,54 +4,44 @@ layout: compress
 
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
 
-  <body>
-    {% include navbar.html %}
+{% include head.html %}
 
-    <!-- Main Section -->
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="section">
-            <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">
-              Practice Categories
-            </p>
-          </div>
+<body>
+  {% include navbar.html %}
 
-          <!-- Card List -->
-          <div class="container" style="max-width: 700px; margin: 0 auto;">
-            <a href="/practice/python">
-              <div class="box mb-5">
-                <h2 class="title is-size-4 has-text-left">Python</h2>
-                <p class="has-text-left has-text-grey">
-                  기초 문법과 데이터를 위한 파이썬 연습 모음
-                </p>
-              </div>
-            </a>
+  <!-- Main Section -->
+  <section class="hero is-fullheight" id="practice">
+    <div class="hero-body">
+      <div class="container">
+        {% include blogpage-heading.html %}
 
-            <a href="/practice/statistics">
-              <div class="box mb-5">
-                <h2 class="title is-size-4 has-text-left">Statistics</h2>
-                <p class="has-text-left has-text-grey">
-                  데이터 해석을 위한 통계 실습 정리
-                </p>
-              </div>
-            </a>
+        <div id="results-container"></div>
 
-            <a href="/practice/machinelearning">
-              <div class="box">
-                <h2 class="title is-size-4 has-text-left">Machine Learning</h2>
-                <p class="has-text-left has-text-grey">
-                  실전 프로젝트용 머신러닝 코드 모음
-                </p>
-              </div>
-            </a>
-          </div>
+        <!-- Practice Cards Section -->
+        <div class="columns is-multiline is-variable is-8" id="blog-card">
+          {% assign practice_categories = site.data.practice-categories %}
+          {% for item in practice_categories %}
+            <div class="column is-12">
+              <a href="{{ item.url }}">
+                <div class="box" style="padding: 2rem;">
+                  <h1 class="title is-size-4 has-text-left">{{ item.title }}</h1>
+                  <div class="content has-text-grey has-text-left" style="margin-top: 0.75rem;">
+                    {{ item.description }}
+                    <hr class="has-background-grey">
+                    <span class="has-text-grey">Go to → <span class="has-text-weight-semibold">{{ item.slug }}</span></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {% endfor %}
         </div>
-      </div>
-    </section>
 
-    {% include footer.html %}
-  </body>
+      </div>
+    </div>
+  </section>
+
+  {% include footer.html %}
+</body>
+
 </html>
